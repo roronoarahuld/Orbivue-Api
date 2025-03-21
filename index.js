@@ -104,3 +104,20 @@ app.delete("/personal-details/:id",(req,res)=>{
         return res.json({status: "Success"})
     })
 })
+
+// PATCH Method
+app.patch("/hobbies/:id", (req, res)=>{
+    const hobbId = req.params.id
+    const body = req.body;
+    const updateHobby = hobbiesDetails.findIndex((updateId)=>updateId.id == hobbId)
+    // Refers to the existing hobby object at the given index.
+    hobbiesDetails[updateHobby] = {
+        // Uses the spread operator to create a copy of the existing object with all its properties.
+        ...hobbiesDetails[updateHobby],
+        // Uses the spread operator again to add or overwrite the properties with the new values from the request body.
+        hobbiesList:[{...body}]
+    }
+    fs.writeFile('./hobbies.json', JSON.stringify(hobbiesDetails),(err, data)=>{
+        return res.json({status: "Success"})
+    })
+})
