@@ -94,8 +94,13 @@ app.post("/personal-details",(req,res)=>{
 // DELETE Method
 app.delete("/personal-details/:id",(req,res)=>{
     const delId = req.params.id
-    console.log("what is the id ", delId)
-    const personalDetailsDel = personalDetails.filter((delPersonal)=>delPersonal.id == delId)
-    console.log("what are we getting ", personalDetailsDel)
-    return res.json({status: "Success"})
+    // Finding the index of the matching id = delID
+    // Using findIndex method we can get the index of an array
+    const personalDetailsDel = personalDetails.findIndex((delPersonal)=>delPersonal.id == delId)
+    // Using splice method to remove the ID associated with delID
+    personalDetails.splice(personalDetailsDel,1)
+    // Updating the file
+    fs.writeFile('./personal-details.json', JSON.stringify(personalDetails),(err, data)=>{
+        return res.json({status: "Success"})
+    })
 })

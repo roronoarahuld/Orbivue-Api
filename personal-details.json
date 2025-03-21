@@ -22,17 +22,5 @@
         "height": "5.5",
         "weight": "70",
         "email": "dalvi.sonal@gmail.com"
-    },
-    {
-        "firstname": "Suraj",
-        "lastname": "Chauhan",
-        "mobile": "8739283728",
-        "DOB-Day": "03",
-        "DOB-Month": "01",
-        "DOB-Year": "2002",
-        "height": "6",
-        "weight": "70",
-        "email": "suraj.chahuhan@gmail.com",
-        "id": 3
     }
 ]
