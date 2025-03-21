@@ -68,7 +68,7 @@ app.post("/hobbies", (req,res)=>{
     // Adding the Id dynamically whenever there is a new reocrd push
     hobbiesDetails.push({ 
         id: hobbiesDetails.length + 1, 
-        hobbiesList : [{...body}]
+        hobbiesList : [{...body}]  // ... is spread operator
     })
     // using fs module to append all the data to the json
     fs.writeFile("./hobbies.json", JSON.stringify(hobbiesDetails), (err , data)=> {
