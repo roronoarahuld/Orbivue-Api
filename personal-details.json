@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "firstname": "Rahul",
+        "lastname": "Dolui",
+        "mobile": "7738479694",
+        "DOB-Day": "07",
+        "DOB-Month": "06",
+        "DOB-Year": "1995",
+        "height": "5.10",
+        "weight": "80",
+        "email": "dolui.rahul@gmail.com"
+    },
+    {
+        "id": 2,
+        "firstname": "Sonal",
+        "lastname": "Dalvi",
+        "mobile": "9773403479",
+        "DOB-Day": "04",
+        "DOB-Month": "01",
+        "DOB-Year": "1993",
+        "height": "5.5",
+        "weight": "70",
+        "email": "dalvi.sonal@gmail.com"
+    },
+    {
+        "firstname": "Suraj",
+        "lastname": "Chauhan",
+        "mobile": "8739283728",
+        "DOB-Day": "03",
+        "DOB-Month": "01",
+        "DOB-Year": "2002",
+        "height": "6",
+        "weight": "70",
+        "email": "suraj.chahuhan@gmail.com",
+        "id": 3
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "hobbiesList": [
+            {
+                "hobby": "cricket",
+                "playingFrom": "childhood"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "hobbiesList": [
+            {
+                "hobby": [
+                    "Cricket",
+                    "Football"
+                ],
+                "playingFrom": [
+                    "Childhood",
+                    "2010"
+                ]
+            }
+        ]
+    }
+]
